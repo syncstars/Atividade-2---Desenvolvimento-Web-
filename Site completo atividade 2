@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Express</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>PC Express</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="banner">
+        <img src="img/banner.jpg" alt="Banner da Empresa">
+    </div>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="img/4xOpx.jpeg" alt="Produto 1">
+            <p>𝑷𝒄 𝑬𝒙𝒑𝒓𝒆𝒔𝒔 𝒆𝒏𝒕𝒆𝒏𝒅𝒆 𝒅𝒆 𝒕𝒆𝒄𝒏𝒍𝒐𝒈𝒊𝒂 𝒆 𝒉𝒂𝒓𝒅𝒘𝒂𝒓𝒆</p>
+        </div>
+        <div class="product-item">
+            <img src="img/download.jpg" alt="Produto 2">
+            <p>𝑺𝒐𝒎𝒐𝒔 𝒓𝒆𝒇𝒆𝒓𝒆̂𝒏𝒄𝒊𝒂 𝒏𝒐 𝒎𝒆𝒓𝒄𝒂𝒅𝒐 𝒂 20 𝒂𝒏𝒐𝒔</p>
+        </div>
+        <div class="product-item">
+            <img src="img/imagem_2024-08-27_142221874.png" alt="Produto 3">
+            <p>𝑽𝒆𝒏𝒉𝒂 𝒓𝒆𝒂𝒍𝒊𝒛𝒂𝒓 𝒐 𝒔𝒐𝒏𝒉𝒐 𝒅𝒐 𝒔𝒆𝒖 𝒔𝒆𝒕𝒖𝒑 𝒄𝒐𝒎 𝒂 𝑷𝑪 𝑬𝒙𝒑𝒓𝒆𝒔𝒔</p>
+        </div>
+        <div class="product-item">
+            <img src="img/imagemm_2024-08-27_142429722.png" alt="Produto 4">
+            <p>𝑨 𝑷𝑪 𝑬𝒙𝒑𝒓𝒆𝒔𝒔 - 𝒄𝒐𝒏𝒕𝒂 𝒄𝒐𝒎 𝒖𝒎𝒂 𝒆𝒒𝒖𝒊𝒑𝒆 𝒆𝒙𝒕𝒓𝒂𝒐𝒓𝒅𝒊𝒏𝒂́𝒓𝒊𝒂 𝒑𝒂𝒓𝒂 𝒗𝒂́𝒓𝒊𝒐𝒔 𝒕𝒊𝒑𝒐𝒔 𝒅𝒆 𝒔𝒆𝒕𝒐𝒓𝒆𝒔 𝒅𝒆𝒏𝒕𝒓𝒐 𝒅𝒆 𝒏𝒐𝒔𝒔𝒂 𝒆𝒎𝒑𝒓𝒆𝒔𝒂</p>
+        </div>
+        <div class="product-item">
+            <img src="img/image_2024-08-27_142935972.png" alt="Produto 5">
+            <p>𝑻𝒆𝒎𝒐𝒔 𝒖𝒎𝒂 𝒆𝒒𝒖𝒊𝒑𝒆 𝒆𝒔𝒑𝒆𝒄𝒊𝒂𝒍𝒊𝒛𝒂𝒅𝒂 𝒏𝒐 𝒉𝒂𝒓𝒅𝒘𝒂𝒓𝒆 𝒕𝒆𝒄𝒏𝒐𝒍𝒐́𝒈𝒊𝒄𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="img/ima_2024-08-27_143159085.png" alt="Produto 6">
+            <p>𝑪𝒐𝒎 𝒐 𝒎𝒆𝒍𝒉𝒐𝒓 𝒉𝒂𝒓𝒅𝒘𝒂𝒓𝒆 𝒂𝒕𝒖𝒂𝒍, 𝒔𝒐𝒎𝒐𝒔 𝒂 𝑷𝑪 𝑬𝒙𝒑𝒓𝒆𝒔𝒔 𝒄𝒐𝒎 𝒔𝒐́𝒄𝒊𝒐 𝒅𝒂 𝑩𝒓𝒂𝒊𝒏 - 𝑺𝒊𝒈𝒂 𝒕𝒂𝒎𝒃𝒆́𝒎 𝒏𝒐𝒔𝒔𝒂𝒔 𝒓𝒆𝒅𝒆𝒔 𝒔𝒐𝒄𝒊𝒂𝒊𝒔 𝒏𝒂 𝒃𝒊𝒐 𝒅𝒐 𝒄𝒐𝒏𝒕𝒂𝒕𝒐</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
