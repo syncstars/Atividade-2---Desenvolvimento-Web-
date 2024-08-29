@@ -1,3 +1,5 @@
+PARTE DO INDEX.HTML
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -66,3 +68,1989 @@
 
 </body>
 </html>
+
+PARTE DO STYLE.CSS
+
+#menu {
+	background: #0099CC;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 10px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+	text-align: left;
+}
+#menu li {
+	display: inline-block;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #0099CC;
+	background: #F2F2F2;
+
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	color: #FFFFFF;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#FFFFFF}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+ /* Estilo Geral */
+ body {
+	color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+	background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+}
+
+/* Estilo do Cabeçalho */
+header {
+
+    color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 {
+    margin: 0;
+	color:#F2F2F2;
+}
+
+.texto {
+	color:#f0eaea;
+	background-color: #1210861f;
+	text-align: center;
+	width: 100%;
+    height: 600px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo do Banner */
+.banner {
+    width: auto;
+    height: 300px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+	opacity:0,5;
+}
+
+.banner img {
+    width: 1300px;
+    height: 300px;
+	justify-content:space-between;
+     display: ;
+}
+
+/* Estilo da Grade de Produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    margin-top: 50px;
+	max-height:180px;
+	font-size:12px ;
+	opacity: 0.7;
+
+} 
+.conteiner {
+width:300px;
+
+}
+.alinhar{
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+    font-size: 18.5px;	
+	
+}
+
+.footer-contato{
+	font-size: 20px;
+}
+
+.formulario{
+display: flex;
+height: auto;
+text-align: center;
+justify-content: center;
+}
+
+.box-formulario{
+gap: 20px;
+padding: 20px;
+justify-content: center;
+display: flex;
+} 
+
+.box2 {
+	background-color: hsla(234, 86%, 78%, 0.226);
+	
+
+
+	
+
+	
+    
+
+}
+
+
+PARTE DA PÁGINA (CONTATO)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - PC Express</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PC Express</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+                
+            
+
+            </ul>
+          </nav>
+    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑭𝒐𝒓𝒎𝒖𝒍𝒂́𝒓𝒊𝒐 𝒅𝒆 𝒄𝒐𝒏𝒕𝒂𝒕𝒐</title>
+</head>
+<body>
+    
+    <div class="box-formulario">
+    <div class="Formulario"> 
+        <div class="box2">
+    <h1>𝑭𝒐𝒓𝒎𝒖𝒍𝒂́𝒓𝒊𝒐 𝒅𝒆 𝒄𝒐𝒏𝒕𝒂𝒕𝒐</h1>        
+    <form action="/submit-form" method="POST">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required><br>
+        
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required><br>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required><br>
+
+        <label for="Telefone">Telefone</label>
+        <input type="number" id="telefone"><br><br>
+
+        <label for="genero">Gênero</label>
+        <select id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <label for="newsletter">Deseja receber nossa newsletter?</label>
+        <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+        <label for="dia_semana">Qual o melhor dia para contato?</label>
+        <input type="radio" id="segunda" name="segunda" value="segunda">
+        <label for="segunda">Segunda-feira</label>
+
+        <input type="radio" id="segunda" name="segunda" value="terca">
+        <label for="segunda">Terça-feira</label>
+
+        <input type="radio" id="segunda" name="segunda" value="quarta">
+        <label for="segunda">Quarta-feira</label>
+
+        <input type="radio" id="segunda" name="segunda" value="quinta">
+        <label for="segunda">Quinta-feira</label>
+
+        <input type="radio" id="sexta" name="sexta" value="sexta">
+        <label for="sexta">Sexta-feira</label><br><br>
+
+        <label for="menssagem">Envie seu feedback</label><br>
+        <textarea id="menssagem" name="menssagem" rows="6" cols="50"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+
+    </form>
+</div>
+    </div>
+    </div>
+
+</body>
+</html>
+    
+    <footer class="footer-contato">
+        <p>𝑻𝒆𝒍𝒆𝒇𝒐𝒏𝒆: (31) 3447-5678 / (31) 99784-3030<br> 
+           𝑬𝒏𝒅𝒆𝒓𝒆𝒄̧𝒐: 𝑹𝒖𝒂 𝑮𝒂𝒎𝒅𝒊𝒂𝒔 𝑴𝒂𝒓𝒒𝒖𝒆𝒔 2020 / 𝑩𝒆𝒍𝒐 𝑯𝒐𝒓𝒊𝒛𝒐𝒏𝒕𝒆 𝑴𝒊𝒏𝒂𝒔 𝑮𝒆𝒓𝒂𝒊𝒔<br> 
+           𝑬𝒎𝒂𝒊𝒍 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒕𝒂𝒕𝒐: 𝒑𝒄𝒆𝒙𝒑𝒓𝒆𝒔𝒔𝒈𝒂𝒎𝒆𝒔@𝒈𝒎𝒂𝒊𝒍.𝒄𝒐𝒎<br> 
+           𝑹𝒆𝒅𝒆 𝒔𝒐𝒄𝒊𝒂𝒍: 𝒉𝒕𝒕𝒑𝒔://𝒘𝒘𝒘.𝒊𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎.𝒄𝒐𝒎/𝒑𝒄𝒆𝒙𝒑𝒓𝒆𝒔𝒔𝒐𝒇𝒊𝒄𝒊𝒂𝒍?𝒓𝒆𝒇=𝒃𝒂𝒅𝒈𝒆<br>
+           𝑻𝒐𝒅𝒐𝒔 𝒐𝒔 𝒅𝒊𝒓𝒆𝒊𝒕𝒐𝒔 𝒓𝒆𝒔𝒆𝒓𝒗𝒂𝒅𝒐𝒔 © 2023 𝑷𝑪 𝑬𝒙𝒑𝒓𝒆𝒔𝒔</p>
+
+    </footer> 
+
+
+(COOLER)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style> #menu {
+        background: #0099CC;
+        height: 45px;
+        padding-left: 18px;
+        border-radius: 10px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+        text-align: left;
+    }
+    #menu li {
+        display: inline-block;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #0099CC;
+        background: #F2F2F2;
+    
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        color: #FFFFFF;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #444444;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #F2F2F2;
+        color: #444444;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:#FFFFFF}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+     /* Estilo Geral */
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+    }
+    
+    /* Estilo do Cabeçalho */
+    header {
+    
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        color:#F2F2F2;
+    }
+    
+    .texto {
+        color:#f0eaea;
+        background-color: #1210861f;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /* Estilo da Grade de Produtos */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo do Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        max-height:120px;
+        font-size:12px ;
+        opacity: 0.7;
+    
+    } 
+    .conteiner {
+    width:300px;
+    
+    }
+    .alinhar{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>Coolers</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/img/Cooler-Para-Processador-DEX-Gamer-Duplo-FAN-Intel-e-AMD-ARGB-6-LEDs-Pata-Universal-DX-9206W_1720640578_g.jpeg" alt="Produto 1">
+            <p>𝑪𝒐𝒐𝒍𝒆𝒓 𝑷𝒂𝒓𝒂 𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒂𝒅𝒐𝒓 𝑫𝑬𝑿 𝑮𝒂𝒎𝒆𝒓 𝑫𝒖𝒑𝒍𝒐 𝑭𝑨𝑵, 𝑰𝒏𝒕𝒆𝒍 𝒆 𝑨𝑴𝑫, 𝑨𝑹𝑮𝑩, 6 𝑳𝑬𝑫𝒔, 𝑷𝒂𝒕𝒂, 𝑼𝒏𝒊𝒗𝒆𝒓𝒔𝒂𝒍 - 𝑫𝑿-9206𝑾</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Cooler-Knup-Para-Processador-Intel-E-AMD-RGB-Gamer-Kp-vr330_1713359295_g.jpeg" alt="Produto 2">
+            <p>𝑪𝒐𝒐𝒍𝒆𝒓 𝑲𝒏𝒖𝒑 𝑷𝒂𝒓𝒂 𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒂𝒅𝒐𝒓 𝑰𝒏𝒕𝒆𝒍 𝑬 𝑨𝑴𝑫, 𝑹𝑮𝑩 𝑮𝒂𝒎𝒆𝒓 - 𝑲𝒑-𝒗𝒓330</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Cooler-Para-Processador-G-Fire-Game-Rainbow-Universal-4-Pins-EWC4R_1704984488_g.jpeg" alt="Produto 3">
+            <p>𝑪𝒐𝒐𝒍𝒆𝒓 𝑷𝒂𝒓𝒂 𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒂𝒅𝒐𝒓 𝑮-𝑭𝒊𝒓𝒆 𝑮𝒂𝒎𝒆 𝑹𝒂𝒊𝒏𝒃𝒐𝒘 𝑼𝒏𝒊𝒗𝒆𝒓𝒔𝒂𝒍, 4 𝑷𝒊𝒏𝒔</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/air-cooler-rise-mode-gamer-g800-180mm-rgb-rm-ac-o8-rgb_1663775981_g.jpeg" alt="Produto 4">
+            <p>𝑨𝒊𝒓 𝑪𝒐𝒐𝒍𝒆𝒓 𝑹𝒊𝒔𝒆 𝑴𝒐𝒅𝒆 𝑮𝒂𝒎𝒆𝒓 𝑮800, 𝑹𝑮𝑩, 𝑨𝑴𝑫/𝑰𝒏𝒕𝒆𝒍, 90𝒎𝒎, 𝑷𝒓𝒆𝒕𝒐 - 𝑹𝑴-𝑨𝑪-𝑶8-𝑹𝑮𝑩</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/cooler-para-processador-cooler-master-hyper-h410r-rgb-amd-intel-rr-h410-20pc-r1-_1582921028_g.jpeg" alt="Produto 5">
+            <p>𝑪𝒐𝒐𝒍𝒆𝒓 𝒑𝒂𝒓𝒂 𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒂𝒅𝒐𝒓 𝑪𝒐𝒐𝒍𝒆𝒓 𝑴𝒂𝒔𝒕𝒆𝒓 𝑯𝒚𝒑𝒆𝒓 𝑯410𝑹, 𝑨𝑴𝑫/𝑰𝒏𝒕𝒆𝒍, 𝑹𝑮𝑩, 𝑷𝒓𝒆𝒕𝒐 - 𝑹𝑹-𝑯410-20𝑷𝑪-𝑹1</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/cooler-para-processador-deepcool-ak620-digital-amd-intel-120mm-preto-r-ak620-bkadmn-g_1698346139_g.jpeg" alt="Produto 6">
+            <p>𝑨𝒊𝒓 𝑪𝒐𝒐𝒍𝒆𝒓 𝑫𝒆𝒆𝒑𝒄𝒐𝒐𝒍 𝑨𝑲620 𝑫𝒊𝒈𝒊𝒕𝒂𝒍, 𝑨𝑴𝑫/𝑰𝒏𝒕𝒆𝒍, 120𝒎𝒎, 𝑷𝒓𝒆𝒕𝒐 - 𝑹-𝑨𝑲620-𝑩𝑲𝑨𝑫𝑴𝑵-𝑮</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
+
+
+(FONTE DE ALIMENTAÇÃO)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style> #menu {
+        background: #0099CC;
+        height: 45px;
+        padding-left: 18px;
+        border-radius: 10px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+        text-align: left;
+    }
+    #menu li {
+        display: inline-block;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #0099CC;
+        background: #F2F2F2;
+    
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        color: #FFFFFF;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #444444;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #F2F2F2;
+        color: #444444;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:#FFFFFF}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+     /* Estilo Geral */
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+    }
+    
+    /* Estilo do Cabeçalho */
+    header {
+    
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        color:#F2F2F2;
+    }
+    
+    .texto {
+        color:#f0eaea;
+        background-color: #1210861f;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /* Estilo da Grade de Produtos */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo do Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        max-height:120px;
+        font-size:12px ;
+        opacity: 0.7;
+    
+    } 
+    .conteiner {
+    width:300px;
+    
+    }
+    .alinhar{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>Fonte de alimentação</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/img/fonte-gamer-rise-mode-zeus-650w-bronze-full-modular-pfc-ativo-preto-rm-psu-01-bz-650_1724075758_g.jpeg" alt="Produto 1">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑹𝒊𝒔𝒆 𝑴𝒐𝒅𝒆 𝒁𝒆𝒖𝒔, 650𝑾, 𝑩𝒓𝒐𝒏𝒛𝒆, 𝑭𝒖𝒍𝒍 𝑴𝒐𝒅𝒖𝒍𝒂𝒓, 𝑷𝑭𝑪 𝑨𝒕𝒊𝒗𝒐, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-550w-Cougar-Atlas-550-80-Plus-Bronze-Pfc-Ativo-Silenciosa-Preta-31at055003p01_1718582450_g.jpeg" alt="Produto 2">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 550𝒘 𝑪𝒐𝒖𝒈𝒂𝒓 𝑨𝒕𝒍𝒂𝒔 550, 80 𝑷𝒍𝒖𝒔 𝑩𝒓𝒐𝒏𝒛𝒆, 𝑷𝒇𝒄 𝑨𝒕𝒊𝒗𝒐, 𝑺𝒊𝒍𝒆𝒏𝒄𝒊𝒐𝒔𝒂, 𝑷𝒓𝒆𝒕𝒂</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/fonte-msi-mag-a850gl-atx-850w-80-plus-gold-modular-pfc-ativo-bivolt-preto_1698349376_g.jpeg" alt="Produto 3">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑴𝑺𝑰 𝑴𝑨𝑮 𝑨850𝑮𝑳, 850𝑾, 80 𝑷𝒍𝒖𝒔 𝑮𝒐𝒍𝒅, 𝑴𝒐𝒅𝒖𝒍𝒂𝒓, 𝑷𝑭𝑪 𝑨𝒕𝒊𝒗𝒐, 𝑪𝒐𝒎 𝑪𝒂𝒃𝒐, 𝑷𝒓𝒆𝒕𝒐, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-Alimenta-o-PC-750w-Silencioso-80-Plus-Pfc_1718756859_g.jpeg" alt="Produto 4">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑨𝒍𝒊𝒎𝒆𝒏𝒕𝒂𝒄̧𝒂̃𝒐 𝑷𝑪 750𝒘 𝑺𝒊𝒍𝒆𝒏𝒄𝒊𝒐𝒔𝒐 80 𝑷𝒍𝒖𝒔 𝑷𝒇𝒄</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-Gigabyte-1000w-80plus-Gold-Pg5-Modular-Pcie-Gen5_1715415051_g.jpeg" alt="Produto 5">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑮𝒊𝒈𝒂𝒃𝒚𝒕𝒆, 1000𝒘, 80𝒑𝒍𝒖𝒔 𝑮𝒐𝒍𝒅 𝑷𝒈5, 𝑴𝒐𝒅𝒖𝒍𝒂𝒓, 𝑷𝒄𝒊𝒆 𝑮𝒆𝒏5</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-PCyes-Aether-850w-Full-Modular-Cybernetics-Gold-Pfc-Ativo-850wfmg_1722977293_g.jpeg" alt="Produto 6">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑷𝑪𝒚𝒆𝒔 𝑨𝒆𝒕𝒉𝒆𝒓 850𝒘 𝑭𝒖𝒍𝒍 𝑴𝒐𝒅𝒖𝒍𝒂𝒓 𝑪𝒚𝒃𝒆𝒓𝒏𝒆𝒕𝒊𝒄𝒔 𝑮𝒐𝒍𝒅 𝑷𝒇𝒄 𝑨𝒕𝒊𝒗𝒐</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
+
+
+(GABINETE)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style> #menu {
+        background: #0099CC;
+        height: 45px;
+        padding-left: 18px;
+        border-radius: 10px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+        text-align: left;
+    }
+    #menu li {
+        display: inline-block;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #0099CC;
+        background: #F2F2F2;
+    
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        color: #FFFFFF;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #444444;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #F2F2F2;
+        color: #444444;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:#FFFFFF}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+     /* Estilo Geral */
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+    }
+    
+    /* Estilo do Cabeçalho */
+    header {
+    
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        color:#F2F2F2;
+    }
+    
+    .texto {
+        color:#f0eaea;
+        background-color: #1210861f;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /* Estilo da Grade de Produtos */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo do Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        max-height:120px;
+        font-size:12px ;
+        opacity: 0.7;
+    
+    } 
+    .conteiner {
+    width:300px;
+    
+    }
+    .alinhar{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>Fonte de alimentação</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/img/fonte-gamer-rise-mode-zeus-650w-bronze-full-modular-pfc-ativo-preto-rm-psu-01-bz-650_1724075758_g.jpeg" alt="Produto 1">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑹𝒊𝒔𝒆 𝑴𝒐𝒅𝒆 𝒁𝒆𝒖𝒔, 650𝑾, 𝑩𝒓𝒐𝒏𝒛𝒆, 𝑭𝒖𝒍𝒍 𝑴𝒐𝒅𝒖𝒍𝒂𝒓, 𝑷𝑭𝑪 𝑨𝒕𝒊𝒗𝒐, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-550w-Cougar-Atlas-550-80-Plus-Bronze-Pfc-Ativo-Silenciosa-Preta-31at055003p01_1718582450_g.jpeg" alt="Produto 2">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 550𝒘 𝑪𝒐𝒖𝒈𝒂𝒓 𝑨𝒕𝒍𝒂𝒔 550, 80 𝑷𝒍𝒖𝒔 𝑩𝒓𝒐𝒏𝒛𝒆, 𝑷𝒇𝒄 𝑨𝒕𝒊𝒗𝒐, 𝑺𝒊𝒍𝒆𝒏𝒄𝒊𝒐𝒔𝒂, 𝑷𝒓𝒆𝒕𝒂</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/fonte-msi-mag-a850gl-atx-850w-80-plus-gold-modular-pfc-ativo-bivolt-preto_1698349376_g.jpeg" alt="Produto 3">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑴𝑺𝑰 𝑴𝑨𝑮 𝑨850𝑮𝑳, 850𝑾, 80 𝑷𝒍𝒖𝒔 𝑮𝒐𝒍𝒅, 𝑴𝒐𝒅𝒖𝒍𝒂𝒓, 𝑷𝑭𝑪 𝑨𝒕𝒊𝒗𝒐, 𝑪𝒐𝒎 𝑪𝒂𝒃𝒐, 𝑷𝒓𝒆𝒕𝒐, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-Alimenta-o-PC-750w-Silencioso-80-Plus-Pfc_1718756859_g.jpeg" alt="Produto 4">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑨𝒍𝒊𝒎𝒆𝒏𝒕𝒂𝒄̧𝒂̃𝒐 𝑷𝑪 750𝒘 𝑺𝒊𝒍𝒆𝒏𝒄𝒊𝒐𝒔𝒐 80 𝑷𝒍𝒖𝒔 𝑷𝒇𝒄</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-Gigabyte-1000w-80plus-Gold-Pg5-Modular-Pcie-Gen5_1715415051_g.jpeg" alt="Produto 5">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑮𝒊𝒈𝒂𝒃𝒚𝒕𝒆, 1000𝒘, 80𝒑𝒍𝒖𝒔 𝑮𝒐𝒍𝒅 𝑷𝒈5, 𝑴𝒐𝒅𝒖𝒍𝒂𝒓, 𝑷𝒄𝒊𝒆 𝑮𝒆𝒏5</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Fonte-Gamer-PCyes-Aether-850w-Full-Modular-Cybernetics-Gold-Pfc-Ativo-850wfmg_1722977293_g.jpeg" alt="Produto 6">
+            <p>𝑭𝒐𝒏𝒕𝒆 𝑮𝒂𝒎𝒆𝒓 𝑷𝑪𝒚𝒆𝒔 𝑨𝒆𝒕𝒉𝒆𝒓 850𝒘 𝑭𝒖𝒍𝒍 𝑴𝒐𝒅𝒖𝒍𝒂𝒓 𝑪𝒚𝒃𝒆𝒓𝒏𝒆𝒕𝒊𝒄𝒔 𝑮𝒐𝒍𝒅 𝑷𝒇𝒄 𝑨𝒕𝒊𝒗𝒐</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
+
+
+(MONITORES)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style> #menu {
+        background: #0099CC;
+        height: 45px;
+        padding-left: 18px;
+        border-radius: 10px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+        text-align: left;
+    }
+    #menu li {
+        display: inline-block;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #0099CC;
+        background: #F2F2F2;
+    
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        color: #FFFFFF;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #444444;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #F2F2F2;
+        color: #444444;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:#FFFFFF}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+     /* Estilo Geral */
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+    }
+    
+    /* Estilo do Cabeçalho */
+    header {
+    
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        color:#F2F2F2;
+    }
+    
+    .texto {
+        color:#f0eaea;
+        background-color: #1210861f;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /* Estilo da Grade de Produtos */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo do Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        max-height:120px;
+        font-size:12px ;
+        opacity: 0.7;
+    
+    } 
+    .conteiner {
+    width:300px;
+    
+    }
+    .alinhar{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>Monitores</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/img/monitor-gamer-lg-ultragear-24-full-hd-ips-180hz-1ms-displayport-e-hdmi-nvidia-g-sync-amd-freesync-hdr10-srgb-99-24gs60f-b_1722881105_g.jpeg" alt="Produto 1">
+            <p>𝑴𝒐𝒏𝒊𝒕𝒐𝒓 𝑮𝒂𝒎𝒆𝒓 𝑳𝑮 𝑼𝒍𝒕𝒓𝒂𝑮𝒆𝒂𝒓 24" 𝑭𝒖𝒍𝒍 𝑯𝑫, 𝑰𝑷𝑺, 180𝑯𝒛, 1𝒎𝒔, 𝑫𝒊𝒔𝒑𝒍𝒂𝒚𝑷𝒐𝒓𝒕 𝒆 𝑯𝑫𝑴𝑰, 𝑵𝑽𝑰𝑫𝑰𝑨 𝑮-𝑺𝒀𝑵𝑪 , 𝑨𝑴𝑫 𝑭𝒓𝒆𝒆𝑺𝒚𝒏𝒄?, 𝑯𝑫𝑹10, 𝒔𝑹𝑮𝑩 99%</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/monitor-gamer-corsair-xeneon-27-oled-240hz-0-03ms-hdr-g-sync-e-freesync-premium-cm-9030002-na_1699289080_g.jpeg" alt="Produto 2">
+            <p>𝑴𝒐𝒏𝒊𝒕𝒐𝒓 𝑮𝒂𝒎𝒆𝒓 𝑪𝒐𝒓𝒔𝒂𝒊𝒓 𝑿𝒆𝒏𝒆𝒐𝒏 27" 𝑶𝑳𝑬𝑫, 240𝑯𝒛, 𝑸𝑯𝑫, 0.03𝒎𝒔, 𝑯𝑫𝑹, 𝑮-𝑺𝒚𝒏𝒄 𝒆 𝑭𝒓𝒆𝒆𝑺𝒚𝒏𝒄 𝑷𝒓𝒆𝒎𝒊𝒖𝒎, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Monitor-Gamer-Samsung-Odyssey-G6-27p-Tela-Curva-240Hz-Tizen-Freesync-Gaming-Hub-Smart-Hub-Preto_1719524562_g.jpeg" alt="Produto 3">
+            <p>𝑴𝒐𝒏𝒊𝒕𝒐𝒓 𝑮𝒂𝒎𝒆𝒓 𝑺𝒂𝒎𝒔𝒖𝒏𝒈 𝑶𝒅𝒚𝒔𝒔𝒆𝒚 𝑮6, 27𝒑, 𝑻𝒆𝒍𝒂 𝑪𝒖𝒓𝒗𝒂, 240𝑯𝒛, 𝑻𝒊𝒛𝒆𝒏, 𝑭𝒓𝒆𝒆𝒔𝒚𝒏𝒄, 𝑮𝒂𝒎𝒊𝒏𝒈 𝑯𝒖𝒃, 𝑺𝒎𝒂𝒓𝒕 𝑯𝒖𝒃, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Monitor-Samsung-ViewFinity-S9-27p-5K-Tela-Plana-60Hz-5Ms-Thunderbolt-4-Smart-Hub-Gaming-Mode_1709218092_g.jpeg" alt="Produto 4">
+            <p>𝑴𝒐𝒏𝒊𝒕𝒐𝒓 𝑺𝒂𝒎𝒔𝒖𝒏𝒈 𝑽𝒊𝒆𝒘𝑭𝒊𝒏𝒊𝒕𝒚 𝑺9, 27𝒑, 5𝑲, 𝑻𝒆𝒍𝒂 𝑷𝒍𝒂𝒏𝒂, 60𝑯𝒛, 5𝑴𝒔, 𝑻𝒉𝒖𝒏𝒅𝒆𝒓𝒃𝒐𝒍𝒕 4, 𝑺𝒎𝒂𝒓𝒕 𝑯𝒖𝒃, 𝑮𝒂𝒎𝒊𝒏𝒈 𝑴𝒐𝒅𝒆</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Monitor-Curvo-LED-23-Polegadas-Widescreen-Full-HD-Kit-Teclado-E-Mouse-s-fio-Branco_1722543244_g (1).jpeg" alt="Produto 5">
+            <p>𝑴𝒐𝒏𝒊𝒕𝒐𝒓 𝑪𝒖𝒓𝒗𝒐 𝑳𝑬𝑫 23 𝑷𝒐𝒍𝒆𝒈𝒂𝒅𝒂𝒔 𝑾𝒊𝒅𝒆𝒔𝒄𝒓𝒆𝒆𝒏 𝑭𝒖𝒍𝒍 𝑯𝑫 + 𝑲𝒊𝒕 𝑻𝒆𝒄𝒍𝒂𝒅𝒐 𝑬 𝑴𝒐𝒖𝒔𝒆 𝒔/𝒇𝒊𝒐- 𝑩𝒓𝒂𝒏𝒄𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Monitor-LED-23-Brazil-PC-23wbr-75-1600x900-75hz-5ms-Fura-o-Vesa-HDMI-E-Vga-Branco_1719325431_g.jpeg" alt="Produto 6">
+            <p>𝑴𝒐𝒏𝒊𝒕𝒐𝒓 𝑳𝑬𝑫 23 𝑩𝒓𝒂𝒛𝒊𝒍 𝑷𝑪 23𝒘𝒃𝒓-75 - 1600𝒙900 - 75𝒉𝒛 - 5𝒎𝒔 - 𝑭𝒖𝒓𝒂𝒄̧𝒂̃𝒐 𝑽𝒆𝒔𝒂 - 𝑯𝑫𝑴𝑰 𝑬 𝑽𝒈𝒂 - 𝑩𝒓𝒂𝒏𝒄𝒐</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
+
+
+PAGINA PRINCIPAL (PRODUTOS)
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - PC Express</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PC Express</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+
+                
+
+            </ul>
+          </nav>
+    </header>
+
+
+    <h1>Produtos</h1>
+
+    <div class="product-categories">
+        <div class="category">
+            <h2>Periféricos</h2>
+            <a href="/html/perifericos.html">Ver mais</a>
+        </div>
+        <div class="category">
+            <h2>Placas Mãe</h2>
+            <a href="/html/placa mae.html">Ver mais</a>
+        </div>
+        <div class="category">
+            <h2>Gabinetes</h2>
+            <a href="/html/gabinete.html">Ver mais</a>
+        </div>
+        <div class="category">
+            <h2>Monitores</h2>
+            <a href="/html/monitores.html">Ver mais</a>
+        </div>
+        <div class="category">
+            <h2>Fontes de Alimentação</h2>
+            <a href="/html/fonte de alimentação.html">Ver mais</a>
+        </div>
+        <div class="category">
+            <h2>Coolers</h2>
+            <a href="cooler.html">Ver mais</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+
+(PERIFÉRICOS)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style> #menu {
+        background: #0099CC;
+        height: 45px;
+        padding-left: 18px;
+        border-radius: 10px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+        text-align: left;
+    }
+    #menu li {
+        display: inline-block;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #0099CC;
+        background: #F2F2F2;
+    
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        color: #FFFFFF;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #444444;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #F2F2F2;
+        color: #444444;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:#FFFFFF}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+     /* Estilo Geral */
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+    }
+    
+    /* Estilo do Cabeçalho */
+    header {
+    
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        color:#F2F2F2;
+    }
+    
+    .texto {
+        color:#f0eaea;
+        background-color: #1210861f;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /* Estilo da Grade de Produtos */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo do Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        max-height:120px;
+        font-size:12px ;
+        opacity: 0.7;
+    
+    } 
+    .conteiner {
+    width:300px;
+    
+    }
+    .alinhar{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>Periféricos</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/img/mouse-gamer-redragon-cobra-chroma-rgb-12400dpi-7-botoes-preto-m711-v2_1656018617_g.jpeg" alt="Produto 1">
+            <p>𝑴𝒐𝒖𝒔𝒆 𝑮𝒂𝒎𝒆𝒓 𝑹𝒆𝒅𝒓𝒂𝒈𝒐𝒏 𝑪𝒐𝒃𝒓𝒂, 𝑪𝒉𝒓𝒐𝒎𝒂 𝑹𝑮𝑩, 10000𝑫𝑷𝑰, 7 𝑩𝒐𝒕𝒐̃𝒆𝒔, 𝑷𝒓𝒆𝒕𝒐 - 𝑴711 𝑽2</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/mouse-sem-fio-gamer-logitech-g-pro-x-superlight-lightspeed-5-botoes-25000-dpi-910-005879_1614261139_g.jpeg" alt="Mouse">
+           <p>𝑴𝒐𝒖𝒔𝒆 𝑺𝒆𝒎 𝑭𝒊𝒐 𝑮𝒂𝒎𝒆𝒓 𝑳𝒐𝒈𝒊𝒕𝒆𝒄𝒉 𝑮 𝑷𝑹𝑶 𝑿 𝑺𝒖𝒑𝒆𝒓𝒍𝒊𝒈𝒉𝒕, 𝑳𝒊𝒈𝒉𝒕𝒔𝒑𝒆𝒆𝒅, 25000 𝑫𝑷𝑰, 5 𝑩𝒐𝒕𝒐̃𝒆𝒔, 𝑷𝒓𝒆𝒕𝒐<p>
+            
+        </div>
+        <div class="product-item">
+            <img src="/img/teclado-mecanico-gamer-hyperx-alloy-rise-gkbd-rgb-switches-linear-anti-ghosting-preto-7g7a3aa_1723135249_g.jpeg" alt="Produto 3">
+            <p>𝑻𝒆𝒄𝒍𝒂𝒅𝒐 𝑴𝒆𝒄𝒂̂𝒏𝒊𝒄𝒐 𝑮𝒂𝒎𝒆𝒓 𝑯𝒚𝒑𝒆𝒓𝑿 𝑨𝒍𝒍𝒐𝒚 𝑹𝒊𝒔𝒆 𝑮𝑲𝑩𝑫, 𝑹𝑮𝑩, 𝑺𝒘𝒊𝒕𝒄𝒉𝒆𝒔 𝒍𝒊𝒏𝒆𝒂𝒓, 𝑨𝒏𝒕𝒊-𝑮𝒉𝒐𝒔𝒕𝒊𝒏𝒈, 𝑷𝒓𝒆𝒕𝒐</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/teclado-mecanico-gamer-hyperx-alloy-rise-gkbd-75-rgb-switch-linear-layout-75-anti-ghosting-preto-7g7a4aa_1723120220_g.jpeg" alt="Produto 4">
+            <p>𝑻𝒆𝒄𝒍𝒂𝒅𝒐 𝑴𝒆𝒄𝒂̂𝒏𝒊𝒄𝒐 𝑮𝒂𝒎𝒆𝒓 𝑯𝒚𝒑𝒆𝒓𝑿 𝑨𝒍𝒍𝒐𝒚 𝑹𝒊𝒔𝒆 𝑮𝑲𝑩𝑫 75, 𝑹𝑮𝑩, 𝑺𝒘𝒊𝒕𝒄𝒉 𝒍𝒊𝒏𝒆𝒂𝒓, 𝑳𝒂𝒚𝒐𝒖𝒕 75%, 𝒂𝒏𝒕𝒊-𝒈𝒉𝒐𝒔𝒕𝒊𝒏𝒈, 𝑷𝒓𝒆𝒕𝒐 𝒈</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/headset-gamer-redragon-zeus-chroma-mk-ii-rgb-surround-7-1-usb-drivers-53mm-preto-vermelho-h510-rgb_1631555309_g.jpeg" alt="Produto 5">
+            <p>𝑯𝒆𝒂𝒅𝒔𝒆𝒕 𝑮𝒂𝒎𝒆𝒓 𝑹𝒆𝒅𝒓𝒂𝒈𝒐𝒏 𝒁𝒆𝒖𝒔 𝑿, 𝑪𝒉𝒓𝒐𝒎𝒂 𝑴𝒌.𝑰𝑰, 𝑹𝑮𝑩, 𝑺𝒖𝒓𝒓𝒐𝒖𝒏𝒅 7.1, 𝑼𝑺𝑩, 𝑫𝒓𝒊𝒗𝒆𝒓𝒔 53𝑴𝑴, 𝑷𝒓𝒆𝒕𝒐/𝑽𝒆𝒓𝒎𝒆𝒍𝒉𝒐 - 𝑯510-𝑹𝑮𝑩 𝒈</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/75089_index_g.jpeg" alt="Produto 6">
+            <p>𝑴𝒐𝒖𝒔𝒆𝒑𝒂𝒅 𝑮𝒂𝒎𝒆𝒓 𝑪𝒐𝒓𝒔𝒂𝒊𝒓 𝑴𝑴300, 𝑺𝒑𝒆𝒆𝒅, 𝑬𝒙𝒕𝒓𝒂 𝑮𝒓𝒂𝒏𝒅𝒆 (930𝒙300𝒎𝒎)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
+
+
+(PLACA MÃE)
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style> #menu {
+        background: #0099CC;
+        height: 45px;
+        padding-left: 18px;
+        border-radius: 10px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+        text-align: left;
+    }
+    #menu li {
+        display: inline-block;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #0099CC;
+        background: #F2F2F2;
+    
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        color: #FFFFFF;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #444444;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #F2F2F2;
+        color: #444444;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#444444;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:#FFFFFF}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+     /* Estilo Geral */
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image:url(https://wallpapercave.com/wp/wp2155861.jpg)
+    }
+    
+    /* Estilo do Cabeçalho */
+    header {
+    
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        color:#F2F2F2;
+    }
+    
+    .texto {
+        color:#f0eaea;
+        background-color: #1210861f;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /* Estilo da Grade de Produtos */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo do Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        max-height:120px;
+        font-size:12px ;
+        opacity: 0.7;
+    
+    } 
+    .conteiner {
+    width:300px;
+    
+    }
+    .alinhar{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    
+
+    <header>
+        <h1>Placa mãe</h1>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/sobre.html">Sobre</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+              
+                
+
+            </ul>
+          </nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="/img/placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_1552586908_g.jpeg" alt="Produto 1">
+            <p>𝑷𝒍𝒂𝒄𝒂 𝑴𝒂̃𝒆 𝑨𝑺𝑹𝒐𝒄𝒌 𝑩450𝑴 𝑺𝒕𝒆𝒆𝒍 𝑳𝒆𝒈𝒆𝒏𝒅, 𝑨𝑴𝑫 𝑨𝑴4, 𝒎𝑨𝑻𝑿, 𝑫𝑫𝑹4</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/placa-mae-msi-mpg-b550-gaming-plus-amd-am4-atx_1594999681_g.jpeg" alt="Produto 2">
+            <p>𝑷𝒍𝒂𝒄𝒂-𝑴𝒂̃𝒆 𝑴𝑺𝑰 𝑴𝑷𝑮 𝑩550 𝑮𝒂𝒎𝒊𝒏𝒈 𝑷𝒍𝒖𝒔, 𝑨𝑴𝑫 𝑨𝑴4, 𝑨𝑻𝑿</p>
+        </div>
+        <div class="product-item">
+            <img src="/img/placa-mae-msi-b650m-gaming-plus-amd-am5-m-atx-ddr5-wi-fi-b650m-gaming-plus-wifi_1719852351_g.jpeg" alt="Produto 3">
+            <p>𝑷𝒍𝒂𝒄𝒂 𝑴𝒂̃𝒆 𝑴𝑺𝑰 𝑩650𝑴 𝑮𝒂𝒎𝒊𝒏𝒈 𝑷𝒍𝒖𝒔, 𝑨𝑴𝑫 𝑨𝑴5, 𝑴-𝑨𝑻𝑿, 𝑫𝑫𝑹5, 𝑾𝒊-𝑭𝒊 - 𝑩650𝑴 𝑮𝑨𝑴𝑰𝑵𝑮 𝑷𝑳𝑼𝑺 𝑾𝑰𝑭𝑰 </p>
+        </div>
+        <div class="product-item">
+            <img src="/img/placa-mae-asus-prime-h510m-a-intel-socket-lga1200-microatx-ddr4-90mb17c0-m0eay0_1626122770_g.jpeg" alt="Produto 4">
+            <p>𝑷𝒍𝒂𝒄𝒂 𝑴𝒂̃𝒆 𝑨𝒔𝒖𝒔 𝑷𝒓𝒊𝒎𝒆 𝑯510𝑴-𝑨, 𝑰𝒏𝒕𝒆𝒍 𝑺𝒐𝒄𝒌𝒆𝒕 𝑳𝑮𝑨1200, 𝒎𝒊𝒄𝒓𝒐𝑨𝑻𝑿, 𝑫𝑫𝑹4 </p>
+        </div>
+        <div class="product-item">
+            <img src="/img/placa-mae-asus-tuf-gaming-b760m-plus-intel-lga-1700-d4-ddr4-matx-90mb1di0-m0eay0_1674052878_g.jpeg" alt="Produto 5">
+            <p>𝑷𝒍𝒂𝒄𝒂 𝑴𝒂̃𝒆 𝑨𝒔𝒖𝒔 𝑻𝑼𝑭 𝑮𝑨𝑴𝑰𝑵𝑮 𝑩760𝑴-𝑷𝒍𝒖𝒔, 𝑰𝒏𝒕𝒆𝒍 𝑳𝑮𝑨 1700, 𝒎𝑨𝑻𝑿, 𝑫4, 𝑫𝑫𝑹4 </p>
+        </div>
+        <div class="product-item">
+            <img src="/img/Placa-M-e-Gigabyte-B560M-Aorus-Elite-Intel-Socket-1200-mATX-DDR4-RGB-HDMI-DP-Tipo-C-Som-USB-3-2_1717707587_g.png" alt="Produto 6">
+            <p>𝑷𝒍𝒂𝒄𝒂-𝑴𝒂̃𝒆 𝑮𝒊𝒈𝒂𝒃𝒚𝒕𝒆 𝑩560𝑴 𝑨𝒐𝒓𝒖𝒔 𝑬𝒍𝒊𝒕𝒆, 𝑰𝒏𝒕𝒆𝒍 𝑺𝒐𝒄𝒌𝒆𝒕 1200, 𝒎𝑨𝑻𝑿, 𝑫𝑫𝑹4, 𝑹𝑮𝑩, 𝑯𝑫𝑴𝑰, 𝑫𝑷, 𝑻𝒊𝒑𝒐-𝑪, 𝑺𝒐𝒎, 𝑼𝑺𝑩 3.2</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefone: (31) 3447-5678 / (31) 99784-3030  
+            <p>Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais</p>
+            <p>Todos os direitos reservados &copy; 2023 PC Express</p>
+    </footer>
+
+</body>
+</html>
+
+
+(SOBRE)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>PC Express</h1>
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/sobre.html">Sobre</a></li>
+        <li><a href="../html/contato.html">Contato</a></li>
+        <li><a class='dropdown-arrow' href="../html/pagina1produtos.html">Produtos</a>
+
+
+
+
+      </ul>
+    </nav>
+  </header>
+  <div class="alinhar">
+    <div class="conteiner">
+      <p class="texto">
+        𝑺𝒐𝒎𝒐𝒔 𝒂 𝒆𝒎𝒑𝒓𝒆𝒔𝒂 𝒇𝒐𝒓𝒎𝒂𝒅𝒂 𝒆𝒎 𝒕𝒆𝒄𝒏𝒐𝒍𝒐𝒈𝒊𝒂, 𝑪𝒐𝒏𝒐𝒔𝒄𝒐 𝒗𝒐𝒄𝒆̂ 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒂 𝒐𝒔 𝒎𝒆𝒍𝒉𝒐𝒓𝒆𝒔 𝒑𝒆𝒓𝒊𝒇𝒆́𝒓𝒊𝒄𝒐𝒔 𝒆 𝒉𝒂𝒓𝒅𝒘𝒂𝒓𝒆 𝒑𝒂𝒓𝒂 𝒐 𝒔𝒆𝒖 𝒔𝒆𝒕𝒖𝒑. 𝑭𝒖𝒏𝒅𝒂𝒅𝒂 𝒆𝒎 2020 𝒂 𝒏𝒐𝒔𝒔𝒂 𝒆𝒎𝒑𝒓𝒆𝒔𝒂 𝒕𝒆𝒎 𝒄𝒐𝒎𝒐 𝒐𝒃𝒋𝒆𝒕𝒊𝒗𝒐 𝒕𝒓𝒂𝒛𝒆𝒓 𝒐 𝒎𝒆𝒍𝒉𝒐𝒓 𝒄𝒖𝒔𝒕𝒐 𝒃𝒆𝒏𝒆𝒇𝒊𝒄𝒊𝒐 𝒅𝒐 𝒎𝒆𝒓𝒄𝒂𝒅𝒐 𝒂𝒕𝒖𝒂𝒍, 𝒄𝒐𝒎 𝒒𝒖𝒂𝒍𝒊𝒅𝒂𝒅𝒆 𝒆 𝒂𝒕𝒆𝒏𝒅𝒊𝒎𝒆𝒏𝒕𝒐𝒔 𝒔𝒂𝒕𝒊𝒔𝒇𝒂́𝒕𝒐𝒓𝒊𝒐𝒔 𝒑𝒂𝒓𝒂 𝒏𝒐𝒔𝒔𝒐𝒔 𝒄𝒍𝒊𝒆𝒏𝒕𝒆𝒔. 𝑨𝒍𝒆́𝒎 𝒅𝒊𝒔𝒔𝒐 𝑻𝒆𝒎𝒐𝒔 𝒆𝒔𝒕𝒓𝒖𝒕𝒖𝒓𝒂 𝒆 𝒆𝒔𝒕𝒐𝒒𝒖𝒆 𝒑𝒂𝒓𝒂 𝒕𝒐𝒅𝒐𝒔 𝒐𝒔 𝒕𝒊𝒑𝒐𝒔 𝒅𝒆 𝒉𝒂𝒓𝒅𝒘𝒂𝒓𝒆 𝒂𝒕𝒖𝒂𝒍 𝒅𝒐 𝒎𝒆𝒓𝒄𝒂𝒅𝒐, 𝒑𝒐𝒔𝒔𝒊𝒃𝒊𝒍𝒊𝒕𝒂𝒏𝒅𝒐 𝒕𝒂𝒎𝒃𝒆́𝒎 𝒔𝒖𝒑𝒐𝒓𝒕𝒆 𝒕𝒆́𝒄𝒏𝒊𝒄𝒐 𝒑𝒂𝒓𝒂 𝒓𝒆𝒔𝒐𝒍𝒗𝒆𝒓 𝒒𝒖𝒂𝒊𝒔𝒒𝒖𝒆𝒓 𝒕𝒊𝒑𝒐 𝒅𝒆 𝒑𝒓𝒐𝒃𝒍𝒆𝒎𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐 𝒑𝒆𝒍𝒐 𝒄𝒍𝒊𝒆𝒏𝒕𝒆 𝒆 𝒂𝒔𝒔𝒊𝒎 𝒔𝒐𝒎𝒐𝒔 𝒄𝒐𝒎𝒑𝒓𝒐𝒎𝒊𝒔𝒔𝒂𝒅𝒐𝒔 𝒄𝒐𝒎 𝒕𝒐𝒅𝒐𝒔 𝒐𝒔 𝒄𝒍𝒊𝒆𝒏𝒕𝒆𝒔.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Telefone: (31) 3447-5678 / (31) 99784-3030 <br>
+      Endereço: Rua Gamdias Marques 2020 / Belo Horizonte Minas Gerais<br>
+      Email para contato: pcexpressgames@gmail.com<br>
+      Todos os direitos reservados &copy; 2023 PC Express</p>
+  </footer>
+</body>
+
+
+
+
